@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".BankMain"
+    android:id="@+id/linearLayout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userGreeting"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Greetings, [Username].\nWelcome to Nougat Bank!"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,TextSizeCheck"
+            tools:layout_conversion_absoluteHeight="108dp"
+            tools:layout_conversion_absoluteWidth="315dp"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/account_details"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Info:\nFull Name - [FNAME]\nBank ID - [BANK ID]"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userGreeting"
+            tools:ignore="HardcodedText"
+            tools:layout_conversion_absoluteHeight="247dp"
+            tools:layout_conversion_absoluteWidth="315dp"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="149dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/balanceBtn"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="BALANCE"
+            tools:ignore="HardcodedText,VisualLintBounds"
+            tools:layout_conversion_absoluteHeight="155dp"
+            tools:layout_conversion_absoluteWidth="300dp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="551dp" />
+
+        <Button
+            android:id="@+id/transferBtn"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="TRANSFER"
+            tools:ignore="HardcodedText,VisualLintBounds"
+            tools:layout_conversion_absoluteHeight="155dp"
+            tools:layout_conversion_absoluteWidth="300dp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="396dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
