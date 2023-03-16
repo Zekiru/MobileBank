@@ -10,19 +10,30 @@
     android:id="@+id/linearLayout">
 
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/nougat_bank" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
         <TextView
             android:id="@+id/userGreeting"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:gravity="start"
-            android:text="Greetings, [Username].\nWelcome to Nougat Bank!"
-            android:textSize="24sp"
+            android:text="Greetings, [Username]."
+            android:textColor="#280853"
+            android:textSize="28dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -34,13 +45,14 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="48dp" />
+            android:layout_height="24dp" />
 
         <TextView
             android:id="@+id/account_details"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Info:\nFull Name - [FNAME]\nBank ID - [BANK ID]"
+            android:textColor="#3C3C3C"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -54,36 +66,34 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="48dp" />
+
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/balanceBtn"
-            android:layout_width="300dp"
-            android:layout_height="80dp"
-            android:text="BALANCE"
-            tools:ignore="HardcodedText,VisualLintBounds"
-            tools:layout_conversion_absoluteHeight="155dp"
-            tools:layout_conversion_absoluteWidth="300dp"
-            tools:layout_editor_absoluteX="55dp"
-            tools:layout_editor_absoluteY="551dp" />
+    <Button
+        android:id="@+id/balanceBtn"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button"
+        android:text="BALANCE"
+        tools:ignore="HardcodedText,VisualLintBounds"
+        tools:layout_conversion_absoluteHeight="155dp"
+        tools:layout_conversion_absoluteWidth="300dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="551dp" />
 
-        <Button
-            android:id="@+id/transferBtn"
-            android:layout_width="300dp"
-            android:layout_height="80dp"
-            android:text="TRANSFER"
-            tools:ignore="HardcodedText,VisualLintBounds"
-            tools:layout_conversion_absoluteHeight="155dp"
-            tools:layout_conversion_absoluteWidth="300dp"
-            tools:layout_editor_absoluteX="55dp"
-            tools:layout_editor_absoluteY="396dp" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/transferBtn"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="TRANSFER"
+        tools:ignore="HardcodedText,VisualLintBounds"
+        tools:layout_conversion_absoluteHeight="155dp"
+        tools:layout_conversion_absoluteWidth="300dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="396dp" />
 
 
 </LinearLayout>

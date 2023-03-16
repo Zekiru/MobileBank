@@ -8,6 +8,16 @@
     android:orientation="vertical"
     tools:context=".BankTransfer">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/nougat_bank" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
     <TextView
         android:id="@+id/transferHeader"
         android:layout_width="250dp"
@@ -15,6 +25,7 @@
         android:layout_marginTop="0dp"
         android:gravity="center"
         android:text="Transfer"
+        android:textColor="#000000"
         android:textSize="34sp"
         tools:ignore="HardcodedText,TextSizeCheck" />
 
@@ -25,29 +36,33 @@
     <EditText
         android:id="@+id/transferId"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginTop="0dp"
         android:layout_weight="0"
         android:autofillHints="Input Username or ID"
+        android:background="@drawable/button"
         android:ems="10"
         android:hint="Username or ID"
         android:inputType="textPersonName"
+        android:paddingLeft="20dp"
         android:textSize="24sp"
         tools:ignore="HardcodedText,InefficientWeight" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="48dp" />
+        android:layout_height="24dp" />
 
     <EditText
         android:id="@+id/transferAmount"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginTop="12dp"
         android:autofillHints="Input Amount"
+        android:background="@drawable/button"
         android:ems="10"
         android:hint="Amount"
         android:inputType="number"
+        android:paddingLeft="20dp"
         android:textSize="24sp"
         tools:ignore="HardcodedText" />
 
@@ -61,6 +76,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="0dp"
         android:text="CONFIRM"
+        android:background="@drawable/button"
         tools:ignore="HardcodedText" />
 
 </LinearLayout>

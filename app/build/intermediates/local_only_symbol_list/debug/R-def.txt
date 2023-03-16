@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+color Magent
 color black
 color purple_200
 color purple_500
@@ -7,13 +8,19 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable button
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable nougat_bank
+drawable shape
 id account_details
 id balance
 id balanceBtn
 id balanceHeader
-id header1
+id imageView
+id imageView2
+id imageView3
+id imageView4
 id linearLayout
 id loginBtn
 id password

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="Magent">#FF8B008B</color>
     <color name="black">#FF000000</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -10,8 +11,8 @@
     <string name="app_name">MobileBank</string>
     <style name="Theme.MobileBank" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/Magent</item>
+        <item name="colorPrimaryVariant">@color/Magent</item>
         <item name="colorOnPrimary">@color/white</item>
         
         <item name="colorSecondary">@color/teal_200</item>

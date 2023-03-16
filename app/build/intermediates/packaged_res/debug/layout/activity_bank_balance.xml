@@ -8,6 +8,10 @@
     android:orientation="vertical"
     tools:context=".BankBalance">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
     <TextView
         android:id="@+id/balanceHeader"
         android:layout_width="wrap_content"
@@ -15,6 +19,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="ACCOUNT BALANCE:"
+        android:textColor="#260E51"
         android:textSize="34sp"
         tools:ignore="HardcodedText,TextSizeCheck" />
 
@@ -28,7 +33,18 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="[AMOUNT]"
+        android:textColor="#494949"
         android:textSize="24sp"
         tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/nougat_bank" />
 
 </LinearLayout>
